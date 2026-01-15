@@ -1,8 +1,8 @@
 import { fetcher } from "@/lib/coingecko.actions";
-import { formatCurrency } from "@/lib/formatCurrency";
 import Image from "next/image";
 import { CoinOverviewFallback } from "./fallback";
 import CandlestickChart from "../CandlestickChart";
+import { formatCurrency } from "@/lib/utils";
 
 const CoinOverview = async () => {
   try {
