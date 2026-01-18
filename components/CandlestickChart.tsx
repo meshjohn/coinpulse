@@ -83,7 +83,7 @@ const CandlestickChart = ({
           item[2],
           item[3],
           item[4],
-        ] as OHLCData
+        ] as OHLCData,
     );
 
     series.setData(convertOHLCData(convertedToSeconds));
@@ -117,7 +117,7 @@ const CandlestickChart = ({
           item[2],
           item[3],
           item[4],
-        ] as OHLCData
+        ] as OHLCData,
     );
 
     let merged: OHLCData[];
