@@ -154,7 +154,6 @@ const CandlestickChart = ({
     <div id="candlestick-chart">
       <div className="chart-header">
         <div className="flex-1">{children}</div>
-
         <div className="button-group">
           <span className="text-sm mx-2 font-medium text-purple-100/50">
             Period:

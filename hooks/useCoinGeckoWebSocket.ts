@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -101,7 +101,7 @@ export const useCoinGeckoWebSocket = ({
       unsubscribeAll();
       subscribe("CGSimplePrice", { coin_id: [coinId], action: "set_tokens" });
     });
-    const poolAddress = poolId.replace("_", ":");
+    const poolAddress = poolId.replace("_", ":") ?? "";
     if (poolAddress) {
       subscribe("OnchainTrade", {
         "network_id:pool_addresses": [poolAddress],
